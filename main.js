@@ -1,6 +1,10 @@
 import './style.css'
 import Phaser, { Physics } from 'phaser';
 
+import cone from './cone.png';
+import scoop from './scoop.png';
+import farm from './farm.jpg';
+
 const sizes = {
   width: 800,
   height: 500,
@@ -32,9 +36,9 @@ class GameScene extends Phaser.Scene {
   }
 
   preload(){
-    this.load.image('bg', 'farm.jpg');
-    this.load.image('cone', 'cone.png');
-    this.load.image('scoop', 'scoop.png');
+    this.load.image('bg', farm);
+    this.load.image('cone', cone);
+    this.load.image('scoop', scoop);
   }
   create(){
     this.scene.pause(sceneName);
