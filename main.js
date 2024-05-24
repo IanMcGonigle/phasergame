@@ -32,9 +32,9 @@ class GameScene extends Phaser.Scene {
   }
 
   preload(){
-    this.load.image('bg', '/assets/farm.jpg');
-    this.load.image('cone', '/assets/cone.png');
-    this.load.image('scoop', '/assets/scoop.png');
+    this.load.image('bg', 'farm.jpg');
+    this.load.image('cone', 'cone.png');
+    this.load.image('scoop', 'scoop.png');
   }
   create(){
     this.scene.pause(sceneName);
